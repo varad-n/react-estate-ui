@@ -72,7 +72,7 @@ nav{
         }
 
         @include sm{
-            display: initial;
+            display: inline;
         }
     }
 
@@ -84,6 +84,23 @@ nav{
         color: white;
         height: 100vh;
         width: 50%;
+        transition: all 1s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font: 24px;
+
+
+        &.active{
+            right:0;
+        }
+
+        @include sm{
+            a{
+                display: initial;
+            }
+        }
     }
 
 }
